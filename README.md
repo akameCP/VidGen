@@ -9,7 +9,6 @@ The **VidGen** project implements a **real-time video authentication** system us
 - **Real-Time Video Analysis**: The application analyzes the uploaded video files, detects faces, and shows the progress of the analysis with a progress bar.
 - **Dynamic Status Table**: Displays the analysis status of uploaded videos, including the file name and whether the faces are "Real" or "Fake" in a dynamic table.
 - **Stop/Abort Functionality**: Users can stop the analysis process at any point.
-- **Error Handling**: Clear and informative error messages are provided if any issues arise during the analysis.
 
 ## Technologies Used
 
