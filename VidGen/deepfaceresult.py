@@ -2,17 +2,13 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
-import cv2 # type: ignore
-#cv video işlemede kullanılan kütüphane
+import cv2
 import numpy as np
-from deepface import DeepFace # type: ignore
-#cv den aldığımız frameleri incelemek icin kullanacağımız kütüpane
+from deepface import DeepFace 
 
 
 class DeepFaceResults:
     def __init__(self):
-        # def init clası oluşturuken kullandığımız temel yapı 
-        #self classsın icinde değişkeni kullanabilmemizisağlayan şeydir
         self.path = ""
         self.frames = []
         DeepFace.build_model("VGG-Face")
@@ -52,7 +48,6 @@ class DeepFaceResults:
         
         temp_path = "temp_frame.jpg"
         cv2.imwrite(temp_path, frame)
-        #framesin içinden aldığımız frameleri temp pathe göndererek işncelememiz icin saklıyor
 
         analysis = DeepFace.extract_faces(
             temp_path,
