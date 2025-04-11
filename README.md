@@ -16,7 +16,6 @@ The **VidGen** project implements a **real-time video authentication** system us
 - **PyQt5**: Library used for creating the graphical user interface (GUI).
 - **DeepFace**: Deep learning-based face recognition and anti-spoofing library.
 - **OpenCV**: Library used for processing video files and extracting frames.
-- **TensorFlow**: Backend library used for deep learning-based face recognition models.
 
 ## Running the Application
 
